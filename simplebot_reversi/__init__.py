@@ -194,5 +194,5 @@ def _run_turn(bot: DeltaBot, game: Game) -> str:
             turn = bot.get_contact(
                 game.p2 if game.black_player == game.p1 else game.p1
             ).name
-        text = f"{board.get_disk(board.turn)} it's your turn...\n\n{board}\n\n{board.get_score()}"
+        text = f"{board.get_disk(board.turn)} {turn} it's your turn...\n\n{board}\n\n{board.get_score()}"
     return text
