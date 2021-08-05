@@ -17,7 +17,6 @@ def load_requirements(path: str) -> list:
 if __name__ == "__main__":
     MODULE_NAME = "simplebot_reversi"
     DESC = "Reversi (a.k.a Othello) game plugin for SimpleBot"
-    URL = "https://github.com/simplebot-org/" + MODULE_NAME
     KEYWORDS = "simplebot plugin deltachat game reversi othello"
 
     with open("README.rst") as fh:
@@ -37,7 +36,7 @@ if __name__ == "__main__":
         long_description_content_type="text/x-rst",
         author="The SimpleBot Contributors",
         author_email="adbenitez@nauta.cu",
-        url=URL,
+        url=f"https://github.com/adbenitez/{MODULE_NAME}",
         keywords=KEYWORDS,
         license="MPL",
         classifiers=[
